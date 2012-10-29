@@ -5,7 +5,15 @@ PATHOGEN_DIR="autoload"
 PATHOGEN_FILE="pathogen.vim"
 BUNDLE_DIR="bundle"
 
+VIMRC="vimrc"
+GVIMRC="gvimrc"
+
 update_pathogen:
 	if [ ! -d $(PATHOGEN_DIR) ]; then mkdir -p $(PATHOGEN_DIR); fi
 	if [ ! -d $(BUNDLE_DIR) ]; then mkdir -p $(BUNDLE_DIR); fi
 	wget $(PATHOGEN_URL) -O $(PATHOGEN_DIR)/$(PATHOGEN_FILE)
+
+init:
+	ln -sf `pwd`/$(VIMRC) ~/.vimrc
+	ln -sf `pwd`/$(GVIMRC) ~/.gvimrc
+	ln -sf `pwd` ~/.vim
