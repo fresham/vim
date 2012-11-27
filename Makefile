@@ -16,9 +16,12 @@ pathogen:
 	wget $(PATHOGEN_URL) -O $(PATHOGEN_DIR)/$(PATHOGEN_FILE)
 
 link:
-	ln -sf `pwd`/$(VIMRC) ~/.vimrc
-	ln -sf `pwd`/$(GVIMRC) ~/.gvimrc
-	ln -sf `pwd` ~/.vim
+	if [ -h ~/.vimrc ]; then rm ~/.vimrc; fi
+	if [ -h ~/.gvimrc ]; then rm ~/.gvimrc; fi
+	if [ -h ~/.vim ]; then rm ~/.vim; fi
+	ln -s `pwd`/$(VIMRC) ~/.vimrc
+	ln -s `pwd`/$(GVIMRC) ~/.gvimrc
+	ln -s `pwd` ~/.vim
 
 submodules:
 	git submodule init
