@@ -18,9 +18,6 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=l
 
-" Set the colorscheme
-colorscheme default
-
 " Save when losing focus
 au FocusLost * if !(bufname('%') == '') | :up | endif
 au TabLeave * if !(bufname('%') == '') | :up | endif

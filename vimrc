@@ -58,6 +58,12 @@ set novisualbell
 " Set a dark background for vim in a terminal
 set background=dark
 
+" Tell vim we really have a  256-color terminal
+set t_Co=256
+
+" Set colorscheme
+colorscheme earendel
+
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
 
