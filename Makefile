@@ -29,5 +29,6 @@ submodules:
 
 doc:
 	for plugin in bundle/*; do \
-		vim +'helptags bundle/$$plugin/doc/' +'q!'; \
+		echo $$plugin/doc/; \
+		vim -c "helptags $$plugin/doc/" -c "q!"; \
 	done
