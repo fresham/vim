@@ -1,5 +1,5 @@
 " Set font
-set guifont="Droid Sans Mono 12"
+set guifont=Droid\ Sans\ Mono\ 11
 
 " Use buffers as hidden buffers
 " FIXME: Still not entirely sure what this does.
