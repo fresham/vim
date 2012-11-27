@@ -22,7 +22,3 @@ set guioptions-=l
 au FocusLost * if !(bufname('%') == '') | :up | endif
 au TabLeave * if !(bufname('%') == '') | :up | endif
 au BufLeave * if !(bufname('%') == '') | :up | endif
-
-" Save and load views when entering and leaving a buffer
-au BufWinLeave * if !(bufname('%') == '') | mkview | endif
-au BufWinEnter * if !(bufname('%') == '') | silent loadview | endif
