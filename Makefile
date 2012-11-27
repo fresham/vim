@@ -28,6 +28,6 @@ submodules:
 	git submodule update
 
 doc:
-	for plugin in $(BUNDLE_DIR)/*; do \
-		vim +'helptags $$plugin' +'q!'; \
+	for plugin in bundle/*; do \
+		vim +'helptags bundle/$$plugin/doc/' +'q!'; \
 	done
