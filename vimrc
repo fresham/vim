@@ -62,7 +62,7 @@ set background=dark
 set t_Co=256
 
 " Set colorscheme
-colorscheme earendel
+colorscheme molokai
 
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
