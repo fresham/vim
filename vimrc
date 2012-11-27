@@ -13,6 +13,9 @@ set autoindent
 " Change indentation to match a local context
 set smartindent
 
+" Ignore case while searching
+set ignorecase
+
 " Use case-sensitive searching only when using capital letters
 set smartcase
 
