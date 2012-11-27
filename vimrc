@@ -64,6 +64,12 @@ set t_Co=256
 " Set colorscheme
 colorscheme earendel
 
+" Powerline settings
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_cache_enabled = 0
+let g:Powerline_theme = 'default'
+let g:Powerline_colorscheme = 'default'
+
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
 
