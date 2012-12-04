@@ -17,6 +17,8 @@ set guioptions-=T
 " Turn off scrollbars
 set guioptions-=r
 set guioptions-=l
+set guioptions-=R
+set guioptions-=L
 
 " Save when losing focus
 au FocusLost * if !(bufname('%') == '') | :up | endif
