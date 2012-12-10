@@ -1,3 +1,6 @@
+" Set PATH variables that GVim doesn't pick up
+let $PATH = $PATH . ':/opt/bin/' . ':~/node_modules/.bin/' . ':./node_modules/.bin'
+
 " Set font
 set guifont=Droid\ Sans\ Mono\ 11
 

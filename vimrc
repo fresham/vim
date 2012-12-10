@@ -67,6 +67,9 @@ set t_Co=256
 " Set colorscheme
 colorscheme molokai
 
+" Set shortcut to run make
+nmap <silent> <F5> :w<CR>:make<CR>:cw<CR>
+
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_cache_enabled = 0
