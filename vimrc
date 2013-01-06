@@ -85,8 +85,8 @@ au filetype * set formatoptions-=r  " Don't auto-comment the next line when pres
 au filetype * set formatoptions-=o  " Don't auto-comment the next line when pressing 'o' after a comment
 
 " Autowrap text file lines to 80 characters
-au filetype * setlocal textwidth=80
-au filetype * setlocal formatoptions+=t
+au filetype *.txt setlocal textwidth=80
+au filetype *.txt setlocal formatoptions+=t
 
 " Run Pathogen to load the bundle
 call pathogen#infect()
