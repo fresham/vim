@@ -64,17 +64,8 @@ set background=dark
 " Tell vim we really have a  256-color terminal
 set t_Co=256
 
-" Set colorscheme
-colorscheme molokai
-
 " Set shortcut to run make
 nmap <silent> <F5> :w<CR>:make<CR>:cw<CR>
-
-" Powerline settings
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_cache_enabled = 0
-let g:Powerline_theme = 'default'
-let g:Powerline_colorscheme = 'default'
 
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
