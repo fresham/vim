@@ -70,6 +70,16 @@ nmap <silent> <F5> :w<CR>:make<CR>:cw<CR>
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
 
+" Fuzzy Finder mappings
+nmap <Leader>f :FufFile<CR>
+nmap <Leader>F :FufCoverageFile<CR>
+nmap <Leader>L :FufLine<CR>
+nmap <Leader>r :FufMruFile<CR>
+nmap <Leader>R :FufMruCmd<CR>
+
+" Enable MRU modes
+let g:fuf_modesDisable = []
+
 au filetype * set formatoptions-=t  " Don't auto-wrap text based on textwidth
 au filetype * set formatoptions-=c  " Don't auto-wrap comments based on textwidth
 au filetype * set formatoptions-=r  " Don't auto-comment the next line when pressing <Enter> after a comment
