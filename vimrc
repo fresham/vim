@@ -58,6 +58,10 @@ set noerrorbells
 " Turn off visual error bells
 set novisualbell
 
+" Turn off error highlighting
+:hi Error NONE
+:hi ErrorMsg NONE
+
 " Set a dark background for vim in a terminal
 set background=dark
 
