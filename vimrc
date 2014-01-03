@@ -69,7 +69,7 @@ set background=dark
 set t_Co=256
 
 " Set shortcut to run make
-nmap <silent> <F5> :w<CR>:make<CR>:cw<CR>
+nmap <silent> <Leader>j :w<CR>:make<CR>:cw<CR>
 
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
