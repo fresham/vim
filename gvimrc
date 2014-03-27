@@ -1,7 +1,10 @@
 " Set default window size
 set lines=50 columns=200
 
-colorscheme bclear
+set bg=light
+colorscheme solarized
+
+set gfn=Monaco:h13
 
 set guioptions-=T
 set guioptions-=m

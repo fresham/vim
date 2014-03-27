@@ -31,6 +31,9 @@ set listchars=tab:▸\ ,eol:¬
 " Show cursor position and file position in status bar
 set ruler
 
+" show line numbering
+set number
+
 " Change the terminal title to the current file name
 set title
 
@@ -63,13 +66,16 @@ set novisualbell
 :hi ErrorMsg NONE
 
 " Set a dark background for vim in a terminal
-set background=dark
+set background=light
 
 " Tell vim we really have a  256-color terminal
 set t_Co=256
 
 " Set shortcut to run make
 nmap <silent> <Leader>j :w<CR>:make<CR>:cw<CR>
+
+" scratch shortcut
+nmap <silent> <Leader>g :Scratch<CR>
 
 " Command to turn on invisble characters
 nmap <silent> <Leader>l :set list!<CR>
@@ -95,3 +101,6 @@ au filetype *.txt setlocal formatoptions+=t
 
 " Run Pathogen to load the bundle
 call pathogen#infect()
+
+" Solarized can only be picked up after the bundle is loaded (duh)
+colorscheme solarized
