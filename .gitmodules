@@ -7,6 +7,18 @@
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = https://github.com/vim-scripts/L9.git
-[submodule "bundle/jshint"]
-	path = bundle/jshint
-	url = https://github.com/wookiehangover/jshint.vim.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/autoclose"]
+	path = bundle/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/twig"]
+	path = bundle/twig
+	url = https://github.com/evidens/vim-twig.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = https://github.com/mtth/scratch.vim
