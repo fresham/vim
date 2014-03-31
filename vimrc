@@ -99,6 +99,9 @@ au filetype * set formatoptions-=o  " Don't auto-comment the next line when pres
 au filetype *.txt setlocal textwidth=80
 au filetype *.txt setlocal formatoptions+=t
 
+au FocusLost * silent! wa
+set autowrite
+
 " Run Pathogen to load the bundle
 call pathogen#infect()
 
