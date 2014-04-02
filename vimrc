@@ -22,6 +22,8 @@ set smartcase
 " Use enhanced command line completion
 set wildmenu
 
+set nowrap
+
 " Turn invisibles off by default
 set nolist
 
