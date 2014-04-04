@@ -4,7 +4,7 @@ set lines=50 columns=200
 set bg=light
 colorscheme solarized
 
-set gfn=Monaco:h13
+set gfn=Monaco:h12
 
 set guioptions-=T
 set guioptions-=m
