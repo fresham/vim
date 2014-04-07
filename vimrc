@@ -68,7 +68,7 @@ set novisualbell
 :hi ErrorMsg NONE
 
 " Set a dark background for vim in a terminal
-set background=light
+set background=dark
 
 " Tell vim we really have a  256-color terminal
 set t_Co=256
