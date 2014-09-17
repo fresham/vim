@@ -1,10 +1,10 @@
 " Set default window size
-set lines=50 columns=200
+set lines=40 columns=120
 
-set bg=light
-colorscheme solarized
+set bg=dark
+colorscheme base16-ocean
 
-set gfn=Monaco:h13
+set gfn=Droid\ Sans\ Mono:h12
 
 set guioptions-=T
 set guioptions-=m
