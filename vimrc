@@ -44,7 +44,7 @@ set tabstop=2
 set shiftwidth=2
 
 " Use spaces instead of tabs
-set expandtab
+set noexpandtab
 
 " Set the leader character to /
 let mapleader="\\"
