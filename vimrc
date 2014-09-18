@@ -101,6 +101,8 @@ au filetype * set formatoptions-=o  " Don't auto-comment the next line when pres
 au filetype *.txt setlocal textwidth=80
 au filetype *.txt setlocal formatoptions+=t
 
+au filetype *.isml setlocal filetype=html
+
 " Run Pathogen to load the bundle
 call pathogen#infect()
 
