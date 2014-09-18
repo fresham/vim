@@ -87,6 +87,8 @@ nmap <Leader>L :FufLine<CR>
 nmap <Leader>r :FufMruFile<CR>
 nmap <Leader>R :FufMruCmd<CR>
 
+nmap <Leader>n :NERDTree<CR>
+
 " Enable MRU modes
 let g:fuf_modesDisable = []
 
