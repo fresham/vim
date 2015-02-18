@@ -14,3 +14,5 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 set guioptions-=b
+
+:au FocusLost * silent! wa
