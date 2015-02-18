@@ -107,4 +107,4 @@ au filetype *.isml setlocal filetype=html
 call pathogen#infect()
 
 " Solarized can only be picked up after the bundle is loaded (duh)
-colorscheme base16-ocean
+colorscheme base16-tomorrow

@@ -2,9 +2,9 @@
 set lines=40 columns=120
 
 set bg=dark
-colorscheme base16-ocean
+colorscheme base16-tomorrow
 
-set gfn=Droid\ Sans\ Mono:h12
+set gfn=DejaVu\ Sans\ Mono:h14
 
 set guioptions-=T
 set guioptions-=m
