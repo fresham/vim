@@ -1,89 +1,42 @@
-" Set Vim to run in the full-featured mode
+syntax enable
+filetype plugin indent on
 set nocompatible
 
-set nowrap
+call pathogen#infect()
 
-" Turn on syntax highlighting
-syntax enable
-
-" Turn on filetype detection, filetype plugins, and filetype indentation
-filetype plugin indent on
-
-set backspace=indent,eol,start
-
-" Automatically indent on new lines
-set autoindent
-
-" Change indentation to match a local context
-set smartindent
-
-set foldmethod=syntax
-
-" Ignore case while searching
-set ignorecase
-
-" Use case-sensitive searching only when using capital letters
-set smartcase
-
-" Use enhanced command line completion
-set wildmenu
-
-" Turn invisibles off by default
-set nolist
-
-" Define invisble characters
-set listchars=tab:▸\ ,eol:¬
-
-" Show cursor position and file position in status bar
-set ruler
-
-" show line numbering
-set number
-
-" Change the terminal title to the current file name
-set title
-
-" Set a global default tab width
-set tabstop=2
-
-" Set a global default for number of spaces in autoindent
-set shiftwidth=2
-
-" Use spaces instead of tabs
-set expandtab
-
-" Set the leader character to /
 let mapleader="\\"
 
-" Always show the status line
-set laststatus=2
+set backspace=indent,eol,start
+set autoindent
+set smartindent
+set foldmethod=syntax
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set nowrap
 
-" Use incremental search
 set incsearch
+set ignorecase
+set smartcase
+set wildmenu
 
-" Turn off error bells
+set nolist
+set listchars=tab:▸\ ,eol:¬
+set ruler
+set number
+set title
+set laststatus=2
 set noerrorbells
-
-" Turn off visual error bells
 set novisualbell
 
-" Turn off error highlighting
 :hi Error NONE
 :hi ErrorMsg NONE
 
-" Set a dark background for vim in a terminal
 set background=dark
-
-" Tell vim we really have a  256-color terminal
+colorscheme base16-default
 set t_Co=256
 
-" Set shortcut to run make
-nmap <silent> <Leader>j :w<CR>:make<CR>:cw<CR>
-
-" scratch shortcut
-nmap <silent> <Leader>g :Scratch<CR>
-
-" Command to turn on invisble characters
+" turn on invisibles
 nmap <silent> <Leader>l :set list!<CR>
 
 " Fuzzy Finder mappings
@@ -95,7 +48,7 @@ nmap <Leader>R :FufMruCmd<CR>
 
 nmap <Leader>n :NERDTree<CR>
 
-" Enable MRU modes
+" Enable Fuzzy Finder MRU modes
 let g:fuf_modesDisable = []
 
 au filetype * set formatoptions-=t  " Don't auto-wrap text based on textwidth
@@ -103,14 +56,5 @@ au filetype * set formatoptions-=c  " Don't auto-wrap comments based on textwidt
 au filetype * set formatoptions-=r  " Don't auto-comment the next line when pressing <Enter> after a comment
 au filetype * set formatoptions-=o  " Don't auto-comment the next line when pressing 'o' after a comment
 
-" Autowrap text file lines to 80 characters
 au filetype *.txt setlocal textwidth=80
 au filetype *.txt setlocal formatoptions+=t
-
-au filetype *.isml setlocal filetype=html
-
-" Run Pathogen to load the bundle
-call pathogen#infect()
-
-" Solarized can only be picked up after the bundle is loaded (duh)
-colorscheme base16-default
