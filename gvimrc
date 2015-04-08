@@ -4,7 +4,7 @@ set lines=40 columns=120
 set bg=dark
 colorscheme base16-tomorrow
 
-set gfn=DejaVu\ Sans\ Mono:h14
+set gfn=Droid\ Sans\ Mono:h14
 
 set guioptions-=T
 set guioptions-=m

@@ -1,17 +1,23 @@
 " Set Vim to run in the full-featured mode
 set nocompatible
 
+set nowrap
+
 " Turn on syntax highlighting
 syntax enable
 
 " Turn on filetype detection, filetype plugins, and filetype indentation
 filetype plugin indent on
 
+set backspace=indent,eol,start
+
 " Automatically indent on new lines
 set autoindent
 
 " Change indentation to match a local context
 set smartindent
+
+set foldmethod=syntax
 
 " Ignore case while searching
 set ignorecase
@@ -44,7 +50,7 @@ set tabstop=2
 set shiftwidth=2
 
 " Use spaces instead of tabs
-set noexpandtab
+set expandtab
 
 " Set the leader character to /
 let mapleader="\\"
@@ -107,4 +113,4 @@ au filetype *.isml setlocal filetype=html
 call pathogen#infect()
 
 " Solarized can only be picked up after the bundle is loaded (duh)
-colorscheme base16-tomorrow
+colorscheme base16-default
