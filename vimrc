@@ -9,7 +9,7 @@ let mapleader="\\"
 set backspace=indent,eol,start
 set autoindent
 set smartindent
-set foldmethod=syntax
+" set foldmethod=syntax
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -43,13 +43,28 @@ nmap <silent> <Leader>l :set list!<CR>
 nmap <Leader>f :FufFile<CR>
 nmap <Leader>F :FufCoverageFile<CR>
 nmap <Leader>L :FufLine<CR>
-nmap <Leader>r :FufMruFile<CR>
-nmap <Leader>R :FufMruCmd<CR>
+nmap <Leader>m :FufMruFile<CR>
+nmap <Leader>M :FufMruCmd<CR>
+
+" vim-rspec
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
+" map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
+
+nmap <Leader>[ :cprevious<CR>
+nmap <Leader>] :cnext<CR>
+nmap <Leader>} :cfirst<CR>
+nmap <Leader>} :clast<CR>
 
 nmap <Leader>n :NERDTree<CR>
 
 " Enable Fuzzy Finder MRU modes
 let g:fuf_modesDisable = []
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 au filetype * set formatoptions-=t  " Don't auto-wrap text based on textwidth
 au filetype * set formatoptions-=c  " Don't auto-wrap comments based on textwidth

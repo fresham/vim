@@ -30,3 +30,9 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = git@github.com:slim-template/vim-slim.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git@github.com:mileszs/ack.vim.git
+[submodule "bundle/rspec"]
+	path = bundle/rspec
+	url = git@github.com:thoughtbot/vim-rspec.git
