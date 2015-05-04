@@ -33,7 +33,7 @@ set novisualbell
 :hi ErrorMsg NONE
 
 set background=dark
-colorscheme base16-default
+colorscheme base16-ashes
 set t_Co=256
 
 " turn on invisibles
