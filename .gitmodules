@@ -36,3 +36,6 @@
 [submodule "bundle/rspec"]
 	path = bundle/rspec
 	url = git@github.com:thoughtbot/vim-rspec.git
+[submodule "bundle/tmux-navigator"]
+	path = bundle/tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
