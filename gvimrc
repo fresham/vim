@@ -1,7 +1,6 @@
 set lines=40 columns=120
 set gfn=Droid\ Sans\ Mono:h14
 set bg=dark
-colorscheme base16-tomorrow
 
 set guioptions-=T
 set guioptions-=m
