@@ -17,7 +17,7 @@ set laststatus=2
 set noerrorbells
 set novisualbell
 let base16colorspace=256
-colorscheme base16-atelierestuary
+colorscheme base16-yesterdaynight
 set background=dark
 set t_Co=256
 au filetype * set formatoptions-=t    " Don't auto-wrap text based on textwidth

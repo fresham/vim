@@ -1,5 +1,6 @@
 set lines=40 columns=120
 set gfn=Droid\ Sans\ Mono:h14
+colorscheme base16-yesterdaynight
 set bg=dark
 
 set guioptions-=T
