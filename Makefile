@@ -8,7 +8,7 @@ BUNDLE_DIR="bundle"
 VIMRC="vimrc"
 GVIMRC="gvimrc"
 
-all: pathogen link submodules doc
+all: pathogen submodules link doc
 
 pathogen:
 	if [ ! -d $(PATHOGEN_DIR) ]; then mkdir -p $(PATHOGEN_DIR); fi
