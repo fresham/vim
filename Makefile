@@ -27,6 +27,10 @@ submodules:
 	git submodule init
 	git submodule update
 
+upgrade_bundle:
+	for f in ./bundle/*; do printf "\nupdate $$f"; cd "$$f" && git co master && git uom; cd -; done
+	# for f in ./bundle/*; do echo "$$f"; done
+
 doc:
 	for plugin in bundle/*; do \
 		echo $$plugin/doc/; \
