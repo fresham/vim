@@ -42,3 +42,6 @@
 [submodule "bundle/jsx"]
 	path = bundle/jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/fish"]
+	path = bundle/fish
+	url = https://github.com/dag/vim-fish.git
