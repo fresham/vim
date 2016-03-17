@@ -27,6 +27,9 @@ au filetype * set formatoptions-=o    " Don't auto-comment the next line when pr
 hi Error NONE
 hi ErrorMsg NONE
 
+" filtypes
+au BufRead,BufNewFile Bowerfile set filetype=ruby
+
 set shell=/bin/bash
 
 set makeprg=jshint
