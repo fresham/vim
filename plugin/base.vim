@@ -27,6 +27,8 @@ au filetype * set formatoptions-=o    " Don't auto-comment the next line when pr
 hi Error NONE
 hi ErrorMsg NONE
 
+set shell=/bin/bash
+
 set makeprg=jshint
 set errorformat+=%f:\ line\ %l\\,\ col\ %c\\,\ %m
 
